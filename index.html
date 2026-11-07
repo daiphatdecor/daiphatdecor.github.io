@@ -7,7 +7,7 @@
 <meta name="description" content="Thiết kế nhà phố, nhà cấp 4, biệt thự, nội thất trọn gói: kiến trúc, kết cấu, điện nước, dự toán. Công ty có chứng chỉ hạng III, nhận làm TP.HCM và các tỉnh. Gọi/Zalo 0979 597 679.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://daiphatdecor.github.io/">
-<meta name="theme-color" content="#1f2a2e">
+<meta name="theme-color" content="#0d3b40">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Thiết kế nhà phố, nhà cấp 4, biệt thự trọn gói | Đại Phát Decor">
 <meta property="og:url" content="https://daiphatdecor.github.io/">
@@ -30,9 +30,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#faf8f5;--surface:#ffffff;--ink:#1d1b19;--muted:#6b645d;--line:#e7e1d9;
-  --brand:#b8862f;--brand-dark:#8f6620;--dark:#1f2a2e;--dark-ink:#f3efe8;
-  --radius:14px;--shadow:0 8px 30px rgba(31,42,46,.08);--soft:#f4ead8;
+  --bg:#f7fafa;--surface:#ffffff;--ink:#2f2826;--muted:#6b625e;--line:#dbe7e8;
+  --brand:#04757C;--brand-dark:#035e64;--dark:#0d3b40;--dark-ink:#eef7f8;
+  --radius:14px;--shadow:0 8px 30px rgba(31,42,46,.08);--soft:#e2f2f4;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -54,19 +54,20 @@ section{padding:80px 0}
 .crumb{font-size:13px;opacity:.7;margin-bottom:18px}.crumb a:hover{color:var(--brand)}
 .prose{max-width:820px}.prose h3{font-size:20px;margin:26px 0 8px}.prose p,.prose li{color:var(--muted)}.prose ul{padding-left:20px;margin-top:8px}
 .tbl{overflow-x:auto;margin-top:24px}table{width:100%;min-width:520px;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--soft)}
+.hero .eyebrow,.hero .stats b,.pkg .eyebrow,.pkg .price{color:#6fd3e3}
 /* header */
 header{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-.logo{font-weight:800;font-size:20px;letter-spacing:.02em}
-.logo span{color:var(--brand)}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;letter-spacing:.02em;color:#4A403D}
+.logo b{font-weight:800}.logo span{font-weight:400;color:#4A403D}
 .menu{display:flex;gap:28px;font-weight:500;font-size:15px}
 .menu a:hover{color:var(--brand)}
 .nav .btn{padding:10px 18px;font-size:14px}
 @media(max-width:860px){.menu{display:none}}
 
 /* hero */
-.hero{background:linear-gradient(120deg,rgba(31,42,46,.92),rgba(31,42,46,.65)),
-  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Cg fill='none' stroke='%23b8862f' stroke-opacity='.35' stroke-width='1.5'%3E%3Cpath d='M60 360V170l120-80 120 80v190M300 360V120h200v240M330 160h40v50h-40zM430 160h40v50h-40zM330 250h40v50h-40zM430 250h40v50h-40zM100 220h50v60h-50zM200 220h50v60h-50zM150 360v-60h60v60M20 360h560'/%3E%3C/g%3E%3C/svg%3E") right bottom/720px no-repeat,var(--dark);
+.hero{background:linear-gradient(120deg,rgba(8,52,58,.95),rgba(4,117,124,.75)),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Cg fill='none' stroke='%23039AB2' stroke-opacity='.35' stroke-width='1.5'%3E%3Cpath d='M60 360V170l120-80 120 80v190M300 360V120h200v240M330 160h40v50h-40zM430 160h40v50h-40zM330 250h40v50h-40zM430 250h40v50h-40zM100 220h50v60h-50zM200 220h50v60h-50zM150 360v-60h60v60M20 360h560'/%3E%3C/g%3E%3C/svg%3E") right bottom/720px no-repeat,var(--dark);
   color:var(--dark-ink);padding:110px 0 100px}
 .hero h1{font-size:clamp(32px,5vw,56px);max-width:760px;margin:12px 0 18px}
 .hero p{max-width:600px;opacity:.85;font-size:18px}
@@ -84,23 +85,23 @@ header{position:sticky;top:0;z-index:20;background:rgba(250,248,245,.94);backdro
 @media(max-width:600px){.g3{grid-template-columns:1fr}.g4{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.proj div.t{padding:10px 12px}.proj h3{font-size:15px}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.2s}
 .card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
-.icon{width:46px;height:46px;border-radius:12px;background:#f4ead8;color:var(--brand-dark);display:grid;place-items:center;margin-bottom:16px}
+.icon{width:46px;height:46px;border-radius:12px;background:#e2f2f4;color:var(--brand-dark);display:grid;place-items:center;margin-bottom:16px}
 .card h3{font-size:19px;margin-bottom:8px}
 .card p{color:var(--muted);font-size:15px}
 .card ul{margin-top:12px;padding-left:18px;color:var(--muted);font-size:15px}
 
 /* package */
 .pkg{background:var(--dark);color:var(--dark-ink)}
-.pkg .lead{color:#c9c2b8}
-.pkg .card{background:#27353a;border-color:#34454b}
-.pkg .card p,.pkg .card ul{color:#c9c2b8}
+.pkg .lead{color:#c6dfe1}
+.pkg .card{background:#12494f;border-color:#1d5d64}
+.pkg .card p,.pkg .card ul{color:#c6dfe1}
 .pkg .card.hl{border:2px solid var(--brand)}
 .tag{display:inline-block;background:var(--brand);color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:10px}
 .price{font-size:15px;margin-top:16px;color:var(--brand);font-weight:600}
 
 /* projects */
 .proj{border-radius:var(--radius);overflow:hidden;background:var(--surface);border:1px solid var(--line)}
-.ph{aspect-ratio:4/3;display:grid;place-items:center;color:#fff;font-weight:600;font-size:14px;text-align:center;padding:12px}
+.ph{aspect-ratio:4/3;width:100%;height:auto;object-fit:cover;background:#cfe6e9}
 .proj div.t{padding:16px 18px}
 .proj h3{font-size:17px}
 .proj small{color:var(--muted)}
@@ -128,7 +129,7 @@ summary{font-weight:600;cursor:pointer}
 details p{color:var(--muted);margin-top:10px}
 
 /* contact */
-.contact{background:linear-gradient(135deg,#b8862f,#8f6620);color:#fff;border-radius:22px;padding:50px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.contact{background:linear-gradient(135deg,#04757C,#035e64);color:#fff;border-radius:22px;padding:50px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
 @media(max-width:860px){.contact{grid-template-columns:1fr;padding:32px 22px}}
 .contact p{opacity:.9}
 form{display:grid;gap:12px}
@@ -148,7 +149,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="https://daiphatdecor.com/" aria-label="Đại Phát Decor trang chủ">ĐẠI PHÁT <span>DECOR</span></a>
+    <a class="logo" href="https://daiphatdecor.com/" aria-label="Đại Phát Decor trang chủ"><svg class="mark" width="34" height="30" viewBox="0 0 68 60" aria-hidden="true"><path d="M34 2 4 58h12l18-34z" fill="#04757C"/><path d="M34 2v22l14 26h16z" fill="#039AB2"/><path d="M34 34l-6 11h12z" fill="#039AB2"/></svg><b>DAI PHAT</b> <span>DECOR</span></a>
     <nav class="menu" aria-label="Menu chính">
       <a href="#dich-vu">Dịch vụ</a>
       <a href="#goi">Gói thiết kế</a>
@@ -235,17 +236,18 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
   <div class="wrap">
     <div class="eyebrow">Dự án tiêu biểu</div>
     <h2>Dự án thiết kế tiêu biểu</h2>
-    <p class="lead">Phối cảnh và bản vẽ do Đại Phát Decor thực hiện cho các công trình nhà ở, thương mại và văn phòng.</p>
+    <p class="lead">Phối cảnh các mẫu nhà và hình ảnh công trình thực tế của Đại Phát Decor. Bấm vào mẫu có bài viết để xem chi tiết.</p>
     <div class="grid g4" style="margin-top:36px">
-      <div class="proj"><div class="ph" role="img" aria-label="Phối cảnh Biệt thự tân cổ điển - Đại Phát Decor" style="background:#8b6f4e">Ảnh dự án</div><div class="t"><h3>Biệt thự tân cổ điển</h3><small>Kiến trúc · Nội thất</small></div></div>
-      <div class="proj"><div class="ph" role="img" aria-label="Phối cảnh Nhà phố hiện đại - Đại Phát Decor" style="background:#4f6168">Ảnh dự án</div><div class="t"><h3>Nhà phố hiện đại</h3><small>Kiến trúc · Kết cấu</small></div></div>
-      <div class="proj"><div class="ph" role="img" aria-label="Phối cảnh Quán cà phê sân vườn - Đại Phát Decor" style="background:#6c7a5a">Ảnh dự án</div><div class="t"><h3>Quán cà phê sân vườn</h3><small>Kiến trúc · Cảnh quan</small></div></div>
-      <div class="proj"><div class="ph" role="img" aria-label="Phối cảnh Ruby House - Đại Phát Decor" style="background:#9a8467">Ảnh dự án</div><div class="t"><h3>Ruby House</h3><small>Nhà ở · Nội thất</small></div></div>
-      <div class="proj"><div class="ph" role="img" aria-label="Phối cảnh Thiên Ngọc Luxury - Đại Phát Decor" style="background:#3f4b52">Ảnh dự án</div><div class="t"><h3>Thiên Ngọc Luxury</h3><small>Cửa hàng trang sức</small></div></div>
-      <div class="proj"><div class="ph" role="img" aria-label="Phối cảnh Mặt tiền Newa Premium - Đại Phát Decor" style="background:#7d6a55">Ảnh dự án</div><div class="t"><h3>Mặt tiền Newa Premium</h3><small>Mặt tiền thương mại</small></div></div>
-      <div class="proj"><div class="ph" role="img" aria-label="Phối cảnh Trụ sở Newa Group - Đại Phát Decor" style="background:#5a6a63">Ảnh dự án</div><div class="t"><h3>Trụ sở Newa Group</h3><small>Văn phòng</small></div></div>
-      <div class="proj"><div class="ph" role="img" aria-label="Phối cảnh Nhà phố tân cổ điển - Đại Phát Decor" style="background:#a08a6c">Ảnh dự án</div><div class="t"><h3>Nhà phố tân cổ điển</h3><small>Kiến trúc · Nội thất</small></div></div>
+      <a class="proj" href="du-an/thiet-ke-nha-cap-4-mai-thai.html"><img class="ph" src="images/du-an-1.jpg" alt="Thiết kế nhà cấp 4 mái thái, tường rào hoa gió trắng và cửa gỗ" width="600" height="450" loading="lazy" decoding="async"><div class="t"><h3>Nhà cấp 4 mái thái</h3><small>Phối cảnh 3D · Xem bài viết</small></div></a>
+      <a class="proj" href="du-an/mau-biet-thu-2-tang-hien-dai.html"><img class="ph" src="images/du-an-2.jpg" alt="Mẫu biệt thự 2 tầng hiện đại, mái ngói xám, sảnh cột và cửa gỗ" width="600" height="450" loading="lazy" decoding="async"><div class="t"><h3>Biệt thự 2 tầng hiện đại</h3><small>Phối cảnh 3D · Xem bài viết</small></div></a>
+      <a class="proj" href="du-an/mau-nha-pho-goc-2-mat-tien.html"><img class="ph" src="images/du-an-3.jpg" alt="Mẫu nhà phố góc 2 mặt tiền, ban công vát góc và tầng trệt ốp đá" width="600" height="450" loading="lazy" decoding="async"><div class="t"><h3>Nhà phố góc 2 mặt tiền</h3><small>Phối cảnh 3D · Xem bài viết</small></div></a>
+      <div class="proj"><img class="ph" src="images/du-an-4.jpg" alt="Phối cảnh nhà nhiều tầng phong cách cổ điển, cửa vòm, chiếu sáng ban đêm" width="600" height="450" loading="lazy" decoding="async"><div class="t"><h3>Nhà nhiều tầng cửa vòm</h3><small>Phối cảnh 3D ban đêm</small></div></div>
+      <div class="proj"><img class="ph" src="images/du-an-5.jpg" alt="Phối cảnh nhà hiện đại mái bằng, mảng ốp màu gỗ và sân lát đá" width="600" height="450" loading="lazy" decoding="async"><div class="t"><h3>Nhà hiện đại sân lát đá</h3><small>Phối cảnh 3D</small></div></div>
+      <div class="proj"><img class="ph" src="images/du-an-6.jpg" alt="Phối cảnh công trình hiện đại nhiều khối, ban công kính và trần màu gỗ" width="600" height="450" loading="lazy" decoding="async"><div class="t"><h3>Công trình hiện đại nhiều khối</h3><small>Phối cảnh 3D</small></div></div>
+      <div class="proj"><img class="ph" src="images/du-an-7.jpg" alt="Phối cảnh nhà một tầng mái ngói, hiên cột trắng và sân rộng" width="600" height="450" loading="lazy" decoding="async"><div class="t"><h3>Nhà một tầng hiên rộng</h3><small>Phối cảnh 3D</small></div></div>
+      <div class="proj"><img class="ph" src="images/du-an-8.jpg" alt="Ảnh thực tế mặt tiền nhà phố đang hoàn thiện, thợ đang làm ở ban công tầng trên" width="600" height="450" loading="lazy" decoding="async"><div class="t"><h3>Hoàn thiện mặt tiền nhà phố</h3><small>Ảnh thực tế công trình</small></div></div>
     </div>
+    <p style="margin-top:28px;text-align:center"><a class="btn btn-main" href="du-an/">Xem tất cả mẫu nhà</a></p>
   </div>
 </section>
 
